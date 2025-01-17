@@ -1,6 +1,6 @@
 <template>
   <h2>Adivina el Pokemon de la imagen</h2>
-  <PokemonImagen></PokemonImagen>
+  <PokemonImagen :pokemonId="70" :mostrarPokemon="false"></PokemonImagen>
   <PokemonOpciones/>
 </template>
 
@@ -11,6 +11,10 @@ export default {
     components:{
         PokemonImagen,
         PokemonOpciones
+    }
+   ,
+    methods:{
+
     }
 };
 </script>

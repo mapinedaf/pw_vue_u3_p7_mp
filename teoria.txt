@@ -1,0 +1,14 @@
+Se debe establecer grupos con responsibilidades definidas. Se debe identificar cuando crear componentes
+cuando tiene caracteristicas en comun, funcionalidades bien definidas 
+y un alto potencial de ser reutilizado.
+ej un componente solo de imagenes, un componente solo de opciones. 
+Los componentes deben ser independientes pero no aislados. pueden cominicarse entre si
+
+El alto potencial de reutilizacion determina de que va a esta conformado un componente
+ej si tenemos un formulario que es igual para estudiante y profesor pero al dar guardar
+tienen una logica diferente entonces el boton no debe ser parte del componente.
+Las particualridades se colocan por fuera del componente. 
+
+
+Capa de cliente, es por donde se debe conectar la api a mi aplicacion 
+Lo mas comun es que por cada api exista un cliente 
