@@ -12,3 +12,20 @@ Las particualridades se colocan por fuera del componente.
 
 Capa de cliente, es por donde se debe conectar la api a mi aplicacion 
 Lo mas comun es que por cada api exista un cliente 
+
+Si la funcionalidad es muy amplia tiene sentido tener un cliente por entidad.
+La api debe tener un dominio claro. 
+
+Debemos tratar de guardad una encapsulacion de funcionalidades. 
+El cliente no es una epsecie de bypass que replique la funcionalidad de la api
+Los metodos del cliente deben tener funcionalidades o metodos que ya procesen 
+los datos para que la logica no sea programada en el componente
+
+Ciclo de vida de los componentes:
+Los componentes pasan por etapas, existen multiples etapas en su ciclo de vida
+Una de las etapas que permite cargar funcionalidad o ejecutar una funcionalidad
+cuando el componente se esta creando es una etapa denominada "mounted"
+Vue puede atrapar estas etapas y determinar funcionaladidad en cada una
+Para esto se añade una opcion en OptionsAPI mounted
+El componete padre debe definir las etapas
+Los eventos del ccilo de vida no necesitan await
