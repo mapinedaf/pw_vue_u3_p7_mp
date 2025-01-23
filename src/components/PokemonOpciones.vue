@@ -1,7 +1,7 @@
 <template>
   <div class="opcionesContenedor">
     <ul>
-      <li @click="seleccionado()" v-for="pokemon in arregloPoke" :key="pokemon.id">{{pokemon.name}}</li> 
+      <li @click="seleccionado(pokemon.id)" v-for="pokemon in arregloPoke" :key="pokemon.id">{{pokemon.name}}</li> 
 
     </ul>
   </div>
@@ -16,8 +16,13 @@ export default {
     }
   },
   methods:{
-    seleccionado(){
-      console.log("Hizo click")
+    seleccionado(id){
+      console.log(id);
+      const objetoEnviado = {
+        identificador:id,
+        valor2:true
+      }
+      this.$emit('seleccion',objetoEnviado)
     }
   }
 

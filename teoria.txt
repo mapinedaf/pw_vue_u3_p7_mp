@@ -29,3 +29,7 @@ Vue puede atrapar estas etapas y determinar funcionaladidad en cada una
 Para esto se añade una opcion en OptionsAPI mounted
 El componete padre debe definir las etapas
 Los eventos del ccilo de vida no necesitan await
+
+refs dale un alias al componente hijo y desde el padre acceder
+a todo lo que esta dentro del componente hijo
+el alias puede ser cualquier nombre

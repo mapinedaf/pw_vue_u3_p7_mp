@@ -14,6 +14,16 @@
 
 <script>
 export default {
+  data(){
+    return {
+      propiedadPrueba:"Esta propiedad es de pueba"
+    }
+  },
+  methods:{
+    metodoPrueba(){
+      console.log("Metodo ejecutado desde el padre")
+    }
+  },
 
   props:{
     pokemonId:{
@@ -50,7 +60,7 @@ img {
   height: 30vh;
   width: auto;
   position: absolute;
-  right: 60%;
+  right: 45%;
   left: 40%;
 }
 
