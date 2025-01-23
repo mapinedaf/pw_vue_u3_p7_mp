@@ -1,7 +1,7 @@
 <template>
   <div class="opcionesContenedor">
     <ul>
-      <li @click="seleccionado(pokemon.id)" v-for="pokemon in arregloPoke" :key="pokemon.id">{{pokemon.name}}</li> 
+      <li class ="liOP" @click="seleccionado(pokemon.id)" v-for="pokemon in arregloPoke" :key="pokemon.id">{{pokemon.name}}</li> 
 
     </ul>
   </div>
@@ -35,7 +35,7 @@ ul{
   list-style-type: none;
 }
 
-li{
+.liOP{
 
   width: 20vw;
   border:1px solid black;
@@ -44,7 +44,7 @@ li{
   
 }
 
-li:hover{
+.liOP:hover{
   background: rgba(0,0,0,0.2);
 }
 

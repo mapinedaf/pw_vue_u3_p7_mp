@@ -1,11 +1,10 @@
 <template>
   <div class="pokemonContainer">
-    <img v-show = !mostrarPokemon
+    <img class="pokeImg ocultar" v-show = !mostrarPokemon
       :src=imagenFuente
       alt="No se pudo cargar la imagen "
-      class="ocultar"
     />
-    <img v-show = mostrarPokemon
+    <img class="pokeImg" v-show = mostrarPokemon
      :src=imagenFuente
       alt="No se pudo cargar la imagen "
     />
@@ -56,7 +55,7 @@ export default {
   filter: brightness(0);
 }
 
-img {
+.pokeImg {
   height: 30vh;
   width: auto;
   position: absolute;

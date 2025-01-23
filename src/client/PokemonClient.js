@@ -44,12 +44,23 @@ export function obtenerAleatorioFachada(min,max){
 
 
 
+const listaBagdes = [
 
+    "https://archives.bulbagarden.net/media/upload/thumb/a/a6/Thunder_Badge.png/600px-Thunder_Badge.png", 
+    "https://archives.bulbagarden.net/media/upload/thumb/9/9c/Cascade_Badge.png/40px-Cascade_Badge.png",
 
+        "https://archives.bulbagarden.net/media/upload/thumb/b/b5/Rainbow_Badge.png/40px-Rainbow_Badge.png",
+        "https://archives.bulbagarden.net/media/upload/thumb/7/7d/Soul_Badge.png/50px-Soul_Badge.png",
+    "https://archives.bulbagarden.net/media/upload/thumb/7/78/Earth_Badge.png/600px-Earth_Badge.png",
+    "https://archives.bulbagarden.net/media/upload/thumb/1/12/Volcano_Badge.png/600px-Volcano_Badge.png",
+    "https://archives.bulbagarden.net/media/upload/thumb/6/6b/Marsh_Badge.png/600px-Marsh_Badge.png",
+    "https://archives.bulbagarden.net/media/upload/thumb/d/dd/Boulder_Badge.png/600px-Boulder_Badge.png",
 
+]
 
-
-
+export function obtenerListaBadgesFachada(){
+    return listaBagdes;
+}
 
 
 
