@@ -108,7 +108,5 @@ export default {
 </script>
 
 <style>
-body{
-  background: radial-gradient(rgb(255,255,255), #DD4814);
-}
+
 </style>

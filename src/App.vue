@@ -1,14 +1,16 @@
 <template>
-  <PoKemonPage />
+  <PersonaPage/>
 </template>
 
 <script>
 import PoKemonPage from "./pages/PoKemonPage.vue";
+import PersonaPage from '@/pages/PersonaPage.vue'
 
 export default {
   name: "App",
   components: {
     PoKemonPage,
+    PersonaPage
   },
 };
 </script>
